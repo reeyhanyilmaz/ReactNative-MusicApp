@@ -10,11 +10,9 @@ function App() {
 
   const renderSeperator = () => <View style={styles.seperator} />;
 
-  const handleSearch = text => console.log(text);
-
   return (
     <SafeAreaView style={styles.container}>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar />
       <FlatList
         keyExtractor={item => item.id}
         data={data}
